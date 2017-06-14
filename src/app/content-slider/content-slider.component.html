@@ -1,0 +1,9 @@
+<section class="content-slider--wrapper">
+  <div class="content-slider--box" [ngStyle]="{'transform': 'translateX(' + offset + 'px)'}">
+    <ng-content></ng-content>
+  </div>
+</section>
+<ng-slider-nav (onEmitPrev)="showPrevPage($event)" (onEmitNext)="showNextPage($event)">
+  <button class="ng-content-slider-nav--button ng-content-slider-nav--prev">prev</button>
+  <button class="ng-content-slider-nav--button ng-content-slider-nav--next">next</button>
+</ng-slider-nav>

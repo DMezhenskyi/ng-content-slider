@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.content-slider--wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.content-slider--box {
+  background: #f6f6f6;
+  min-height: 300px;
+  white-space: nowrap;
+  font-size: 0;
+  transition: all 1s cubic-bezier(0.78, -0.27, 0.04, 1.02);
+  will-change: transform;
+}
+.ng-content-slider-nav--button {
+  position: absolute;
+  top: 50%;
+}
+.ng-content-slider-nav--prev {
+  left: 30px;
+}
+.ng-content-slider-nav--next {
+  right: 30px;
+}
